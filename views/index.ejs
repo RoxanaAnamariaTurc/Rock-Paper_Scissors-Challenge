@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            background: rgb(146, 194, 170);
+            background: linear-gradient(90deg, rgb(198, 226, 206) 0%, rgb(104, 164, 145) 50%, rgb(102, 147, 140) 100%);
+
+        }
+
+        input[type=text] {
+            width: 50%;
+            border: none;
+            border-bottom: 2px solid black;
+
+        }
+
+        label {
+            text-align: center;
+        }
+
+        .form {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            padding: 80px 40px 40px;
+            background: rgba(4, 28, 22, 0.7);
+            border-radius: 10px;
+            color: #fff;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            font-size: xxx-large;
+        }
+
+        h2 {
+            margin-top: 15%;
+            margin-bottom: 45%;
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .wrapper {
+            height: 60vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to <br> 🪨 ✋ ✂️</h1>
+    <div class="wrapper">
+
+        <form action="/game" method="POST" class="form">
+            <label for="'player1">Player 1: </label><br>
+            <input type="text" id="player" name="player1"><br>
+            <input type="radio" id="rock" name="choice" value="rock">
+            <label for="rock">Rock</label>
+            <input type="radio" id="paper" name="choice" value="paper">
+            <label for="paper">Paper</label>
+            <input type="radio" id="scissors" name="choice" value="scissors">
+            <label for="scissors">Scissors</label><br>
+            <input type="submit" value="Submit">
+            <input type="reset"><br>
+        </form>
+
+    </div>
+    <h2>Let the game begins !</h2>
+
+
+</html>
